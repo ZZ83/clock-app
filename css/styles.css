@@ -24,10 +24,26 @@ b {
     line-height: 1.375rem;
 }
 
+button {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    letter-spacing: 0.234rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
     q,
     b {
         font-size: 1.125rem;
         line-height: 1.75rem;
+    }
+
+    button {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.313rem;
+        text-transform: uppercase;
+        font-weight: bold;
     }
 }
