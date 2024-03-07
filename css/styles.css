@@ -29,6 +29,11 @@ h2 {
     letter-spacing: 0.125rem;
 }
 
+strong {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
 q,
 b {
     font-size: 0.75rem;
@@ -47,6 +52,11 @@ button {
     h2 {
         font-size: 0.813rem;
         letter-spacing: 0.163rem;
+    }
+
+    strong {
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
 
     q,
@@ -68,5 +78,10 @@ button {
     h2 {
         font-size: 0.938rem;
         letter-spacing: 0.188rem;
+    }
+
+    strong {
+        font-size: 3.5rem;
+        line-height: 4.25rem;
     }
 }
