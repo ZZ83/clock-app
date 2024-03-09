@@ -14,8 +14,15 @@
     src: url("../assets/fonts/inter-v13-latin-700.woff2") format("woff2");
 }
 
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
 html {
     font-family: "Inter", sans-serif;
+    background-color: gray;
 }
 
 h2 {
@@ -41,11 +48,22 @@ b {
 }
 
 button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 7.188rem;
+    height: 2.5rem;
+    padding-left: 1.063rem;
+    padding-right: 0.25rem;
     font-size: 0.75rem;
+    font-weight: bold;
     line-height: 0.875rem;
     letter-spacing: 0.234rem;
     text-transform: uppercase;
-    font-weight: bold;
+    border: none;
+    border-radius: 1.75rem;
+    background-color: white;
+    cursor: pointer;
 }
 
 span {
@@ -74,6 +92,12 @@ span {
     letter-spacing: 0.188rem;
 }
 
+.arrow {
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(180deg);
+}
+
 @media screen and (min-width: 768px) {
     h2 {
         font-size: 0.813rem;
@@ -92,11 +116,17 @@ span {
     }
 
     button {
+        width: 9.125rem;
+        height: 3.5rem;
+        padding-left: 1.313rem;
+        padding-right: 0.563rem;
         font-size: 1rem;
         line-height: 1.75rem;
         letter-spacing: 0.313rem;
         text-transform: uppercase;
         font-weight: bold;
+        display: flex;
+        align-items: center;
     }
 
     .greeting {
@@ -115,6 +145,11 @@ span {
     .greeting__location {
         font-size: 1.125rem;
         letter-spacing: 0.225rem;
+    }
+
+    .arrow {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
 
