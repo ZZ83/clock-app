@@ -64,7 +64,7 @@ span {
     line-height: 6.25rem;
     letter-spacing: -0.156rem;
 }
-.greeting__time-zone {
+.greeting__location {
     font-size: 0.938rem;
     line-height: 1.75rem;
     letter-spacing: 0.188rem;
@@ -105,7 +105,7 @@ span {
         line-height: 10.938rem;
         letter-spacing: -0.274rem;
     }
-    .greeting__time-zone {
+    .greeting__location {
         font-size: 1.125rem;
         letter-spacing: 0.225rem;
     }
@@ -130,7 +130,7 @@ span {
         line-height: 12.5rem;
         letter-spacing: -0.313rem;
     }
-    .greeting__time-zone {
+    .greeting__location {
         font-size: 1.5rem;
         letter-spacing: 0.3rem;
     }
