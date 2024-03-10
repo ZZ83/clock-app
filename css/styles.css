@@ -23,10 +23,7 @@
 html {
     font-family: "Inter", sans-serif;
     background-color: gray;
-}
-
-h2 {
-    text-transform: uppercase;
+    color: white;
 }
 
 h2 {
@@ -34,6 +31,7 @@ h2 {
     font-weight: 400;
     line-height: 1.75rem;
     letter-spacing: 0.125rem;
+    text-transform: uppercase;
 }
 
 strong {
@@ -57,13 +55,23 @@ span {
 
 header {
     display: flex;
+    gap: 16px;
+    max-width: 35.813rem;
     margin-top: 2rem;
-    padding: 0 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5rem;
 }
 
-.refresh {
-    width: 16px;
-    height: 16px;
+.btn-refresh {
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+    align-self: flex-start;
+}
+.btn-refresh__icon {
+    display: block;
 }
 
 .greeting {
@@ -130,6 +138,13 @@ header {
         line-height: 1.75rem;
     }
 
+    header {
+        padding: 0;
+        margin-top: 5rem;
+        margin-left: 4rem;
+        margin-right: initial;
+    }
+
     .greeting {
         font-size: 1.125rem;
         line-height: 1.75rem;
@@ -177,6 +192,11 @@ header {
     strong {
         font-size: 3.5rem;
         line-height: 4.25rem;
+    }
+
+    header {
+        margin-top: 3.5rem;
+        margin-left: 10.25rem;
     }
     .greeting {
         font-size: 1.25rem;
