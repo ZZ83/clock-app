@@ -56,7 +56,7 @@ span {
 header {
     display: flex;
     gap: 16px;
-    max-width: 35.813rem;
+    max-width: 38.813rem;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -72,6 +72,14 @@ header {
 }
 .btn-refresh__icon {
     display: block;
+}
+
+.wrapper {
+    padding-left: 24px;
+    max-width: 38.813rem;
+    margin-top: 14.125rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .greeting {
@@ -145,6 +153,14 @@ header {
         margin-right: initial;
     }
 
+    .wrapper {
+        padding: 0;
+        max-width: 31.188rem;
+        margin-top: 24.25rem;
+        margin-left: 4rem;
+        margin-right: initial;
+    }
+
     .greeting {
         font-size: 1.125rem;
         line-height: 1.75rem;
@@ -198,6 +214,13 @@ header {
         margin-top: 3.5rem;
         margin-left: 10.25rem;
     }
+
+    .wrapper {
+        max-width: 38.688rem;
+        margin-top: 14.563rem;
+        margin-left: 10.25rem;
+    }
+
     .greeting {
         font-size: 1.25rem;
         letter-spacing: 0.25rem;
@@ -213,5 +236,10 @@ header {
     .greeting__location {
         font-size: 1.5rem;
         letter-spacing: 0.3rem;
+    }
+
+    .btn {
+        position: absolute;
+        /* right: 10.25rem; */
     }
 }
