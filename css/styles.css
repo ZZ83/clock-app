@@ -30,9 +30,9 @@ html {
 
 body {
     position: absolute;
+    top: 0;
     width: 100%;
     height: auto;
-    top: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -161,8 +161,27 @@ header {
     transform: rotate(180deg);
 }
 
+.footer {
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(2px);
+    padding-top: 48px;
+    padding-bottom: 32px;
+}
+
+.location {
+    max-width: 35.813rem;
+}
+
+.location__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 768px) {
     h2 {
+        margin: 0;
         font-size: 0.813rem;
         letter-spacing: 0.163rem;
     }
@@ -234,6 +253,32 @@ header {
         width: 2.5rem;
         height: 2.5rem;
     }
+
+    .footer {
+        padding-top: 7.438rem;
+        padding-bottom: 7.438rem;
+    }
+
+    .location {
+        display: flex;
+        justify-content: space-between;
+        width: 33.625rem;
+        max-width: initial;
+    }
+
+    .location:first-child {
+        margin-bottom: 3rem;
+    }
+
+    .location__item {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .location__item--last {
+        margin-right: 1.75rem;
+    }
 }
 
 @media screen and (min-width: 1360px) {
@@ -283,5 +328,22 @@ header {
         position: absolute;
         margin-top: -4.5rem;
         right: 0;
+    }
+
+    .footer {
+        padding-top: 4.625rem;
+        padding-bottom: 4.625rem;
+    }
+
+    .location {
+        width: 52.75rem;
+    }
+
+    .location:first-child {
+        margin-bottom: 2.625rem;
+    }
+
+    .location__item {
+        margin-bottom: 0.563rem;
     }
 }
