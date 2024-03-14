@@ -28,14 +28,6 @@ html {
     color: white;
 }
 
-body {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 h2 {
     font-size: 0.625rem;
     font-weight: 400;
@@ -74,6 +66,18 @@ header {
     gap: 16px;
     max-width: 35.813rem;
     margin-top: 2rem;
+}
+
+main {
+    margin-bottom: 2.5rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .wrapper {
@@ -164,8 +168,8 @@ header {
 .footer {
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(2px);
-    padding-top: 48px;
-    padding-bottom: 32px;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 .location {
@@ -180,6 +184,10 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+    html {
+        background-image: url(../assets/tablet/bg-image-daytime.jpg);
+    }
+
     h2 {
         margin: 0;
         font-size: 0.813rem;
@@ -206,8 +214,12 @@ header {
         margin-top: 5rem;
     }
 
+    main {
+        margin-bottom: 4rem;
+    }
+
     .wrapper {
-        padding: 0 64px;
+        padding: 0 4rem;
     }
 
     .greet__currently {
@@ -282,8 +294,8 @@ header {
 }
 
 @media screen and (min-width: 1360px) {
-    .wrapper {
-        padding: 0;
+    html {
+        background-image: url(../assets/desktop/bg-image-daytime.jpg);
     }
 
     h2 {
@@ -303,6 +315,14 @@ header {
     header {
         margin-top: 3.5rem;
         margin-left: initial;
+    }
+
+    main {
+        margin-bottom: 6.125rem;
+    }
+
+    .wrapper {
+        padding: 0;
     }
 
     .greeting {
