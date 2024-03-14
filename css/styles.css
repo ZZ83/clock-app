@@ -93,7 +93,14 @@ main {
     border: none;
     background: none;
     align-self: flex-start;
+    fill: white;
+    opacity: 0.5;
 }
+
+.btn-refresh:hover {
+    opacity: 1;
+}
+
 .btn-refresh__icon {
     display: block;
 }
