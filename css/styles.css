@@ -26,9 +26,11 @@ html {
     background-size: cover;
     font-family: "Inter", sans-serif;
     color: white;
+    overflow-y: hidden;
 }
 
 h2 {
+    margin: 0;
     font-size: 0.625rem;
     font-weight: 400;
     line-height: 1.75rem;
@@ -70,6 +72,10 @@ header {
 main {
     position: absolute;
     bottom: 2.5rem;
+}
+
+.lift {
+    margin-top: -16rem;
 }
 
 .overlay {
@@ -178,7 +184,6 @@ main {
 .arrow {
     width: 2rem;
     height: 2rem;
-    transform: rotate(180deg);
 }
 
 .footer {
@@ -206,7 +211,6 @@ main {
     }
 
     h2 {
-        margin: 0;
         font-size: 0.813rem;
         letter-spacing: 0.163rem;
     }
@@ -233,6 +237,10 @@ main {
 
     main {
         margin-bottom: 4rem;
+    }
+
+    .lift {
+        margin-top: -27.375rem;
     }
 
     .wrapper {
@@ -340,6 +348,10 @@ main {
 
     main {
         margin-bottom: 6.125rem;
+    }
+
+    .lift {
+        margin-top: -25rem;
     }
 
     .wrapper {
