@@ -31,6 +31,7 @@ html {
 
 body {
     transition: margin-top 0.5s;
+    margin-top: -438px;
 }
 
 h2 {
