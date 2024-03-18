@@ -1,4 +1,25 @@
 /***************** MODULE *****************/
+const getNewQuoteButton = document.getElementById("getNewQuoteButton");
+getNewQuoteButton.addEventListener("click", () => {
+    const quote = document.getElementById("quote");
+    const author = document.getElementById("author");
+    fetch("https://api.quotable.io/quotes/random")
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok please try again.");
+            }
+            return response.json();
+        })
+        .then((data) => {
+            quote.innerText = data[0].content;
+            author.innerText = data[0].author;
+        })
+        .catch((error) => {
+            alert(error.message);
+        });
+});
+
+/***************** MODULE *****************/
 const primaryButton = document.querySelector("#primary");
 primaryButton.addEventListener("click", () => {
     const body = document.querySelector("body");
@@ -25,9 +46,6 @@ const getDateNumbers = (todaysDate) => {
     const millisecondsInADay = 86400000;
     const dayOfTheYear = Math.floor(timeDifference / millisecondsInADay + 1);
     const weekNumber = Math.ceil(dayOfTheYear / 7);
-
-    console.log(todaysDate.toLocaleString("en-US"));
-
     return [dayOfTheYear, weekNumber];
 };
 dayOfTheWeek.innerText = todaysDate.getDay();
