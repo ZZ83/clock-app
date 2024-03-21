@@ -166,6 +166,7 @@ main {
     font-size: 0.938rem;
     line-height: 1.75rem;
     letter-spacing: 0.188rem;
+    text-transform: uppercase;
 }
 
 .btn {

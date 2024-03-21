@@ -32,8 +32,8 @@
 						</svg>
 						<span class="greet__time-of-day">GOOD MORNING</span> <span class="greet__currently">, IT’S CURRENTLY</span> <br>
 					</div>
-					<span class="greeting__time">11:37</span> <span class="greeting__time-zone">BST</span><br>
-					<span class="greeting__location">IN LONDON, UK</span>
+					<span id="current-time" class="greeting__time"></span> <span id="abbreviation" class="greeting__time-zone"></span><br>
+					<span id="city-country" class="greeting__location"></span>
 				</h1>
 				<button id="primary" class="btn">
 					More
@@ -52,21 +52,21 @@
 			<div class="location">
 				<div class="location__item">
 					<h2>Current timezone</h2>
-					<strong>Europe/London</strong>
+					<strong id="timezone">Europe/London</strong>
 				</div>
 				<div class="location__item">
 					<h2>Day of the year</h2>
-					<strong id="day-of-the-year">295</strong>
+					<strong id="day-of-the-year"></strong>
 				</div>
 			</div>
 			<div class="location">
 				<div class="location__item">
 					<h2>Day of the week</h2>
-					<strong id="day-of-the-week">5</strong>
+					<strong id="day-of-the-week"></strong>
 				</div>
 				<div class="location__item location__item--last">
 					<h2>Week number</h2>
-					<strong id="week-number">42</strong>
+					<strong id="week-number"></strong>
 				</div>
 			</div>
 		</div>
