@@ -35,6 +35,7 @@ primaryButton.addEventListener("click", () => {
     }
 });
 
+/***************** MODULE *****************/
 function getData() {
     const currentTime = document.querySelector("#current-time");
     const abbreviation = document.querySelector("#abbreviation");
@@ -43,7 +44,6 @@ function getData() {
     const dayOfTheYear = document.querySelector("#day-of-the-year");
     const dayOfTheWeek = document.querySelector("#day-of-the-week");
     const weekNumber = document.querySelector("#week-number");
-
     fetch("http://worldtimeapi.org/api/ip")
         .then((response) => {
             if (!response.ok) {
@@ -54,7 +54,7 @@ function getData() {
         .then((data) => {
             const dateTime = new Date(data.datetime);
             currentTime.innerText = `${dateTime.getHours()}:${
-                dateTime.getMinutes() < 10 ? "0" : "" + dateTime.getMinutes()
+                dateTime.getMinutes() < 10 ? `0${dateTime.getMinutes()}` : "" + dateTime.getMinutes()
             }`;
             abbreviation.innerText = data.abbreviation;
             timezone.innerText = data.timezone;

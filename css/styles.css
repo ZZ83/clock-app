@@ -207,10 +207,6 @@ main {
     padding-bottom: 2rem;
 }
 
-.location {
-    max-width: 35.813rem;
-}
-
 .location__item {
     display: flex;
     align-items: center;
@@ -316,8 +312,6 @@ main {
     .location {
         display: flex;
         justify-content: space-between;
-        width: 33.625rem;
-        max-width: initial;
     }
 
     .location:first-child {
@@ -404,10 +398,6 @@ main {
     .footer {
         padding-top: 4.625rem;
         padding-bottom: 4.625rem;
-    }
-
-    .location {
-        width: 52.75rem;
     }
 
     .location:first-child {
