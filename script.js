@@ -44,6 +44,7 @@ function getData() {
     const dayOfTheYear = document.querySelector("#day-of-the-year");
     const dayOfTheWeek = document.querySelector("#day-of-the-week");
     const weekNumber = document.querySelector("#week-number");
+    const greeting = document.querySelector("#greeting");
     fetch("http://worldtimeapi.org/api/ip")
         .then((response) => {
             if (!response.ok) {
@@ -56,6 +57,15 @@ function getData() {
             currentTime.innerText = `${dateTime.getHours()}:${
                 dateTime.getMinutes() < 10 ? `0${dateTime.getMinutes()}` : "" + dateTime.getMinutes()
             }`;
+
+            if (dateTime.getHours() >= 5 && dateTime.getHours() < 12) {
+                greeting.innerText = "GOOD MORING";
+            } else if (dateTime.getHours() >= 12 && dateTime.getHours() < 18) {
+                greeting.innerText = "GOOD AFTERNOON";
+            } else {
+                greeting.innerText = "GOOD EVENING";
+            }
+
             abbreviation.innerText = data.abbreviation;
             timezone.innerText = data.timezone;
             dayOfTheWeek.innerText = data.day_of_week;
