@@ -86,6 +86,11 @@ main {
     bottom: 2.5rem;
 }
 
+#sun,
+#moon {
+    display: none;
+}
+
 .lift {
     margin-top: -16rem;
 }

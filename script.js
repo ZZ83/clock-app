@@ -37,6 +37,8 @@ primaryButton.addEventListener("click", () => {
 
 /***************** MODULE *****************/
 function getData() {
+    const sun = document.querySelector("#sun");
+    const moon = document.querySelector("#moon");
     const currentTime = document.querySelector("#current-time");
     const abbreviation = document.querySelector("#abbreviation");
     const cityCountry = document.querySelector("#city-country");
@@ -64,6 +66,14 @@ function getData() {
                 greeting.innerText = "GOOD AFTERNOON";
             } else {
                 greeting.innerText = "GOOD EVENING";
+            }
+
+            if (dateTime.getHours() >= 5 && dateTime.getHours() < 18) {
+                moon.style.display = "none";
+                sun.style.display = "initial";
+            } else {
+                sun.style.display = "none";
+                moon.style.display = "initial";
             }
 
             abbreviation.innerText = data.abbreviation;
