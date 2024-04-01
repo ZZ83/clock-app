@@ -20,6 +20,7 @@ function getNewQuote() {
 
 /***************** FUNCTION *****************/
 function getData() {
+    const html = document.querySelector("html");
     const sun = document.querySelector("#sun");
     const moon = document.querySelector("#moon");
     const currentTime = document.querySelector("#current-time");
@@ -54,9 +55,11 @@ function getData() {
             if (dateTime.getHours() >= 5 && dateTime.getHours() < 18) {
                 moon.style.display = "none";
                 sun.style.display = "initial";
+                html.setAttribute("data-day", "true");
             } else {
                 sun.style.display = "none";
                 moon.style.display = "initial";
+                html.setAttribute("data-day", "false");
             }
 
             abbreviation.innerText = data.abbreviation;
