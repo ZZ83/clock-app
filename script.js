@@ -1,6 +1,5 @@
-/***************** MODULE *****************/
-const getNewQuoteButton = document.getElementById("getNewQuoteButton");
-getNewQuoteButton.addEventListener("click", () => {
+/***************** FUNCTION *****************/
+function getNewQuote() {
     const quote = document.getElementById("quote");
     const author = document.getElementById("author");
     fetch("https://api.quotable.io/quotes/random")
@@ -17,25 +16,9 @@ getNewQuoteButton.addEventListener("click", () => {
         .catch((error) => {
             alert(error.message);
         });
-});
+}
 
-/***************** MODULE *****************/
-const primaryButton = document.querySelector("#primary");
-primaryButton.addEventListener("click", () => {
-    const body = document.querySelector("body");
-    const arrow = document.querySelector(".arrow");
-    if (body.classList.contains("lift")) {
-        body.classList.remove("lift");
-        primaryButton.childNodes[0].nodeValue = "MORE";
-        arrow.style.transform = "rotate(0deg)";
-    } else {
-        body.classList.add("lift");
-        primaryButton.childNodes[0].nodeValue = "LESS";
-        arrow.style.transform = "rotate(180deg)";
-    }
-});
-
-/***************** MODULE *****************/
+/***************** FUNCTION *****************/
 function getData() {
     const sun = document.querySelector("#sun");
     const moon = document.querySelector("#moon");
@@ -98,4 +81,27 @@ function getData() {
         });
 }
 
+/***************** EVENT *****************/
+const getNewQuoteButton = document.getElementById("getNewQuoteButton");
+getNewQuoteButton.addEventListener("click", () => {
+    getNewQuote();
+});
+
+/***************** EVENT *****************/
+const primaryButton = document.querySelector("#primary");
+primaryButton.addEventListener("click", () => {
+    const body = document.querySelector("body");
+    const arrow = document.querySelector(".arrow");
+    if (body.classList.contains("lift")) {
+        body.classList.remove("lift");
+        primaryButton.childNodes[0].nodeValue = "MORE";
+        arrow.style.transform = "rotate(0deg)";
+    } else {
+        body.classList.add("lift");
+        primaryButton.childNodes[0].nodeValue = "LESS";
+        arrow.style.transform = "rotate(180deg)";
+    }
+});
+
+getNewQuote();
 getData();
